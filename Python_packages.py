@@ -9,10 +9,8 @@ expenses_a = np.array(expenses)
 profit = revenue_a - expenses_a
 print("Profit = %s" %(profit))
 dict = { "months":['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], "profit" :[  25, 191, 738, 797, -60, -30, -214, 394, -594, -23, 7, -226] }
-Fin_Status = pd.DataFrame(dict)
+Fin_Status = pd.Series(dict)
 print(Fin_Status)
-fin_status = pd.Series(dict)
-print(fin_status)
 x = months
 y = profit
 plt.plot(x, y, color="blue", linewidth=2)
